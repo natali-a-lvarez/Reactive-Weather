@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import cities from "./data";
 import WeatherCard from "./components/WeatherCard";
+import Form from "./components/Form";
 import Location from "./components/Location";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
       <h1 className="title">Reactive Weather</h1>
       <h4 className="subtitle">Up to the minute weather news</h4>
+      <Form location={location} updateLocation={setLocation} cities={cities} />
       <div className="app">
         <WeatherCard city={cities.find((el) => el.city === location)} />
         <Location

@@ -5,8 +5,6 @@ import partlyCloudy from "../assets/PartlyCloudy.svg";
 import rainy from "../assets/Rainy.svg";
 
 function WeatherCard({ city }) {
-  console.log(city);
-
   function renderImage(forecast) {
     if (forecast === "Sunny") {
       return sunny;
